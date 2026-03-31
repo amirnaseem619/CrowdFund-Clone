@@ -260,10 +260,10 @@ a:hover {
 .second-container,
 .third-container {
     width: 85%;
-    height: 45vh;
+    height: auto;
     margin: 3rem auto;
     box-shadow: 0 0 1px 2px rgb(225, 227, 227);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -316,14 +316,14 @@ a:hover {
 }
 
 .left-days-nd-reward-btn button  {
-    width: 12vw;
-    height: 7vh;
+    padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 25px;
     background-color: hsl(176, 72%, 28%);
     color: white;
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -389,6 +389,9 @@ a:hover {
     }
 
     /* main section responsiveness */
+    .about-this-project p br {
+        display: none;
+    }
     .mastercraft-bamboo-container {
         width: 80vw;
         height: auto;
@@ -417,18 +420,32 @@ a:hover {
         margin: 0 0.5rem 0 0;
     }
 
+    .main-section #bookmarked {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem 0 0;
+    }
+
+
     .counter-container {
         width: 80vw;
-        height: 30vh;
+        height: auto;
         justify-content: space-around;
         margin: 2rem auto 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .counter-container .counters {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     .progress-bar {
         width: 70vw;
         height: 12px;
         background-color: rgb(235, 231, 231);
-        margin: auto;
+        margin: 1.5rem auto 0 auto;
         border-radius: 20px;
     }
 
@@ -436,6 +453,25 @@ a:hover {
         width: 80vw;
         margin: 2rem auto 0 auto;
         height: auto;
+    }
+
+    .heading-and-price {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .left-days-nd-reward-btn {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container {
+        width: 90%;
+        padding: 1.5rem;
     }
 }
 
@@ -471,5 +507,37 @@ a:hover {
         color: black;
     }
 
+    .master-craft-buttons {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .main-section #bookmarked {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem 0 0;
+    }
+
+
+}
+
+@media(max-width: 484px) {
+    .master-craft-buttons {
+        display: flex;
+        flex-direction: column;
+        font-size: .30rem;
+    }
+
+    .main-section #bookmarked {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem 0 0;
+    }
+}
+
+@media(max-width: 305px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
 }
