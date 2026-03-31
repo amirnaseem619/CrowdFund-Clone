@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crowdfund - Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!-- navbar logo -->
+        <div class="logo"><a href="#">crowdfund</a></div>
+        <!-- navbar links -->
+        <ul class="links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+
+        <div class="btn-toggle">
+          <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255)"></i>
+        </div>
+
+        <!-- Step 1: Add the class="dropdown-menu" so that CSS styles can apply to this menu -->
+        <div id="dropdown-menu" class="dropdown-menu" hidden>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <div class="main-section">
+      <div class="mastercraft-bamboo-container">
+        <img src="assets/images/logo-mastercraft.svg" alt="" />
+
+        <h2 class="mastercraft-heading">Mastercraft Bamboo Monitor Rises</h2>
+        <h3 class="mastercraft-sub-heading">
+          A beautiful and handcrafted monitor stand to reduce neck and eye
+          strain
+        </h3>
+
+        <div class="master-craft-buttons">
+          <button class="back-this-project">Back this project</button>
+          <button id="bookmarked">
+            <img src="assets/icons/icon-bookmark.svg" alt="" />Boomarked
+          </button>
+        </div>
+      </div>
+
+      <!-- counter container -->
+      <div class="counter-container">
+        <div class="counters">
+          <div class="backed-rate">
+            <h2>$89,112</h2>
+            <p>of $100,000 backed</p>
+          </div>
+
+          <div class="total-backers">
+            <h2>50,12</h2>
+            <p>total backers</p>
+          </div>
+
+          <div class="days-left">
+            <h2>56</h2>
+            <p>Days left</p>
+          </div>
+        </div>
+
+        <!-- progress bar -->
+        <div class="progress-bar">
+          <div class="inner-progress"></div>
+        </div>
+      </div>
+
+      <!-- About this project -->
+
+      <div class="about-this-project">
+        <h2>About this project</h2>
+        <p class="first-content">
+          It’s the most honor for me to stand here and speech. Firstly a big
+          <br />
+          congratulation to all the freshers’ students you all are the truest
+          <br />
+          proofs that sheikh Zayed Islamic center is the best university in
+          <br />
+          Peshawar. The all the seniors are all proud to be the part of Islamic
+          <br />
+          center you all juniors are so lucky to have our footsteps to follow us
+          <br />
+          so thank you all the freshers.
+        </p>
+
+        <p class="second-content">
+          I want you all to know that you all are wholehearted welcomed on the
+          <br />
+          moment your stepped in sheikh Islamic center university of Peshawar.
+          <br />
+          footsteps.
+        </p>
+
+        <!-- About this project containers -->
+        <div class="first-container">
+          <div class="heading-and-price">
+            <h2>
+              Bamboo <br />
+              stand
+            </h2>
+            <p>Pledge $25 or more</p>
+          </div>
+          <p class="content3">
+            I want you all to know that you all are wholehearted <br />
+            welcomed on the moment your stepped in sheikh Islamic <br />
+            center university of Peshawar. footsteps.
+          </p>
+
+          <div class="left-days-nd-reward-btn">
+            <div class="genral">
+              <h2>101</h2><span>left</span>
+            </div>
+
+            <button>Select Reward</button>
+          </div>
+        </div>
+
+        <!-- second container -->
+         <div class="second-container">
+          <div class="heading-and-price">
+            <h2>
+             Black Edition <br> Stand
+            </h2>
+            <p>Pledge $75 or more</p>
+          </div>
+          <p class="content3">
+            I want you all to know that you all are wholehearted <br />
+            welcomed on the moment your stepped in sheikh Islamic <br />
+            center university of Peshawar. footsteps.
+          </p>
+
+          <div class="left-days-nd-reward-btn">
+            <div class="genral">
+              <h2>64</h2><span>left</span>
+            </div>
+
+            <button>Select Reward</button>
+          </div>
+        </div>
+
+        <!-- third container -->
+         <div class="third-container">
+          <div class="heading-and-price">
+            <h2>
+              Mahogany Special <br> Edition
+            </h2>
+            <p>Pledge $75 or more</p>
+          </div>
+          <p class="content3">
+            I want you all to know that you all are wholehearted <br />
+            welcomed on the moment your stepped in sheikh Islamic <br />
+            center university of Peshawar. footsteps.
+          </p>
+
+          <div class="left-days-nd-reward-btn">
+            <div class="genral">
+              <h2>0</h2><span>left</span>
+            </div>
+
+            <button>Select Reward</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

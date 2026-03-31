@@ -1,0 +1,475 @@
+:root {
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #06afff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(assets/images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin: 0 2rem 0 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: orange;
+}
+
+.navbar .logo a {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.navbar .btn-toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    /* height: 8vh; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown-menu li {
+    list-style: none;
+    gap: 30px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* main section */
+.main-section {
+    width: 100%;
+    height: 250vh;
+}
+
+.mastercraft-bamboo-container {
+    width: 48vw;
+    height: 45vh;
+    background-color: white;
+    margin: -100px 0 0 27%;
+    box-shadow: 0 0 1px 3px rgb(176, 246, 246);
+    border-radius: 5px;
+}
+
+.mastercraft-bamboo-container img {
+    margin: -1.8rem 0 0 45%;
+}
+
+.main-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+}
+
+.main-section h3 {
+    font-size: 0.80rem;
+    color: gray;
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+}
+
+.master-craft-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0 0 0;
+}
+
+.main-section .back-this-project {
+    width: 13vw;
+    height: 8vh;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+    font-size: 0.90rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.main-section #bookmarked {
+    background-color: lightcyan;
+    border: none;
+    width: 13vw;
+    height: 8vh;
+    border-radius: 30px;
+    color: hsl(176, 72%, 28%);
+    font-size: 0.90rem;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-section #bookmarked img {
+    margin: 0 0 0 -1rem;
+}
+
+/* counter container */
+
+.counter-container {
+    width: 48vw;
+    height: 35vh;
+    background-color: white;
+    margin: 2rem 0 0 27%;
+    box-shadow: 0 0 1px 3px rgb(176, 246, 246);
+    border-radius: 5px;
+}
+
+.counter-container .counters {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0 0 0;
+}
+
+.counter-container .counters h2 {
+    font-size: 1.9rem;
+    color: black;
+}
+
+.counter-container .counters p {
+    font-size: 0.90rem;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.backed-rate {
+    line-height: 2.5rem;
+}
+
+.total-backers {
+    line-height: 2.5rem;
+}
+
+.days-left {
+    line-height: 2.5rem;
+}
+
+/* progress bar*/
+.progress-bar {
+    width: 40vw;
+    height: 12px;
+    background-color: rgb(235, 231, 231);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.progress-bar .inner-progress {
+    width: 70%;
+    height: 12px;
+    background-color: hsl(176, 72%, 28%);
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+/* About this project */
+.about-this-project {
+    width: 48vw;
+    height: 100%;
+    background-color: white;
+    margin: 2rem 0 0 27%;
+    box-shadow: 0 0 1px 3px rgb(176, 246, 246);
+    border-radius: 5px;
+    padding: 2rem 0 0 0;
+}
+
+.about-this-project h2 {
+    text-align: left;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    color: black;
+    margin: 0 0 0 2rem;
+}
+
+.about-this-project p {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: hsl(176, 72%, 28%);
+    line-height: 2rem;
+    text-align: left;
+    margin: 2rem 0 0 2rem;
+}
+
+/* about this project containers */
+.first-container,
+.second-container,
+.third-container {
+    width: 85%;
+    height: 45vh;
+    margin: 3rem auto;
+    box-shadow: 0 0 1px 2px rgb(225, 227, 227);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-and-price h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.first-container p,
+.second-container p,
+.third-container p {
+    line-height: 1.5rem;
+    text-align: left;
+    margin: 0 2rem 0 0;
+
+}
+
+.left-days-nd-reward-btn {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 0;
+}
+
+.genral {
+    display: flex;
+    align-items: end;
+}
+
+.genral span {
+    margin: 0 0 2px 0;
+    font-size: medium;
+    color: hsl(176, 72%, 28%);
+}
+
+.genral h2 {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    margin: 0 0.5rem 0 0;
+}
+
+.left-days-nd-reward-btn button  {
+    width: 12vw;
+    height: 7vh;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1024px) {
+    .navbar .links {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: 60vh;
+        background-image: url(assets/images/image-hero-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 13vh;
+        align-items: end;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    .navbar .btn-toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 14vh;
+        left: 5%;
+        right: 5%;
+        width: auto;
+        height: 10vh;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+        align-items: center;
+    }
+
+    .dropdown-menu li {
+        padding: 0 0 0 2rem;
+    }
+
+    .dropdown-menu a {
+        padding: 0;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+
+    /* main section responsiveness */
+    .mastercraft-bamboo-container {
+        width: 80vw;
+        height: auto;
+        padding-bottom: 2rem;
+        margin: -100px auto 0 auto;
+    }
+
+    .mastercraft-bamboo-container img {
+        margin: -1.8rem 0 0 45%;
+    }
+
+    .master-craft-buttons {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .main-section .back-this-project,
+    .main-section #bookmarked {
+        width: auto;
+        padding: 0 1.5rem;
+        height: 3.5rem;
+        min-width: unset;
+    }
+
+    .main-section #bookmarked img {
+        margin: 0 0.5rem 0 0;
+    }
+
+    .counter-container {
+        width: 80vw;
+        height: 30vh;
+        justify-content: space-around;
+        margin: 2rem auto 0 auto;
+    }
+
+    .progress-bar {
+        width: 70vw;
+        height: 12px;
+        background-color: rgb(235, 231, 231);
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    .about-this-project {
+        width: 80vw;
+        margin: 2rem auto 0 auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dropdown-menu {
+        position: absolute;
+        top: 14vh;
+        left: 10%;
+        right: 6%;
+        width: auto;
+        height: 30vh;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+        align-items: center;
+    }
+
+    .dropdown-menu li {
+        padding: 2rem 0 0 0;
+    }
+
+    .dropdown-menu a {
+        padding: 0;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+
+
+}
